@@ -3,46 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chathura [Surname]</title>
+  <title>Chathura Bandutunga — ANU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: sans-serif;
-      max-width: 480px;
-      margin: 60px auto;
-      padding: 0 20px;
-      color: #222;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #FAFBFC;
+      color: #1E2530;
+      padding: 52px 24px 64px;
     }
-    h1 { margin-bottom: 4px; }
-    .role { color: #555; margin-bottom: 20px; }
-    a { color: #0066cc; }
-    hr { margin: 20px 0; border: none; border-top: 1px solid #ddd; }
-    ul { list-style: none; padding: 0; line-height: 2; }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Logo */
+    .logo {
+      margin-bottom: 36px;
+    }
+
+    .logo img {
+      height: 44px;
+      display: block;
+    }
+
+    /* Name block */
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      font-size: 0.88rem;
+      color: #5A6B7A;
+      line-height: 1.75;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #E4E8EC;
+      margin: 30px 0;
+    }
+
+    /* Section heading */
+    h2 {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C41E25;
+      margin-bottom: 14px;
+    }
+
+    /* Research */
+    .research-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .research-desc {
+      font-size: 0.85rem;
+      color: #5A6B7A;
+      line-height: 1.7;
+      margin-bottom: 16px;
+      max-width: 560px;
+    }
+
+    .streams {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .stream {
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 4px;
+      background: #F0F2F5;
+      color: #2B3440;
+      border: 1px solid #E0E4E8;
+    }
+
+    /* Links */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .link {
+      display: inline-block;
+      font-size: 0.82rem;
+      color: #2B3440;
+      text-decoration: none;
+      padding: 7px 16px;
+      border: 1px solid #E0E4E8;
+      border-radius: 6px;
+      background: #FFFFFF;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .link:hover {
+      border-color: #C41E25;
+      color: #C41E25;
+    }
+
+    /* Forge footnote */
+    .footnote {
+      font-size: 0.78rem;
+      color: #9AAAB8;
+    }
+
+    .footnote a {
+      color: #9AAAB8;
+      text-decoration: none;
+    }
+
+    .footnote a:hover {
+      color: #C41E25;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 36px 20px 48px; }
+      h1 { font-size: 1.5rem; }
+    }
   </style>
 </head>
 <body>
+<div class="container">
 
-  <h1>Chathura [Surname]</h1>
+  <div class="logo">
+    <img src="AMLLogo1v2_Transparent_4x.png" alt="Applied Metrology Labs — ANU">
+  </div>
+
+  <h1>Chathura Bandutunga</h1>
   <p class="role">
     Level C Research Fellow<br>
-    Centre for Gravitational Astrophysics, ANU<br>
+    Centre for Gravitational Astrophysics · Australian National University<br>
     Canberra, Australia
   </p>
 
   <hr>
 
-  <p><strong>Research:</strong> Digital Interferometry<br>
-  Applied Metrology Laboratory, CGA</p>
-
-  <p><strong>Venture:</strong> <a href="#">Forge Photonics</a></p>
+  <h2>Research</h2>
+  <p class="research-title">Digital Interferometry</p>
+  <p class="research-desc">
+    Precision optical measurement for gravitational wave detectors and beyond.
+    Our work applies advanced interferometry, control systems, and real-time digital
+    signal processing to a broad range of sensing and metrology applications,
+    bridging fundamental physics and practical instrumentation.
+  </p>
+  <div class="streams">
+    <span class="stream">Absolute Ranging</span>
+    <span class="stream">Distributed Sensing</span>
+    <span class="stream">Laser Frequency Stabilisation</span>
+  </div>
 
   <hr>
 
-  <ul>
-    <li>📧 <a href="mailto:TODO@anu.edu.au">TODO@anu.edu.au</a></li>
-    <li>🎓 <a href="#">Google Scholar</a></li>
-    <li>🔗 <a href="#">LinkedIn</a></li>
-    <li>🌐 <a href="#">Lab website</a></li>
-  </ul>
+  <h2>Contact</h2>
+  <div class="links">
+    <a href="mailto:chathura.bandutunga@anu.edu.au" class="link">Email</a>
+    <a href="https://cga.anu.edu.au/research/research-themes/applied-metrology" class="link" target="_blank" rel="noopener">Lab page</a>
+    <a href="https://scholar.google.com/citations?user=jq5VYPwAAAAJ&hl=en" class="link" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-0443-0142" class="link" target="_blank" rel="noopener">ORCID</a>
+    <a href="https://www.linkedin.com/in/chathura-bandutunga-7a93a1158" class="link" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
 
+  <hr>
+
+  <p class="footnote">Also a founder at <a href="https://forgephotonics.com/" target="_blank" rel="noopener">Forge Photonics</a>.</p>
+
+</div>
 </body>
 </html>
